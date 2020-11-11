@@ -1,0 +1,12 @@
+#ifndef PLUGINDEMO_GLOBAL_H
+#define PLUGINDEMO_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(PLUGINDEMO_LIBRARY)
+#  define PLUGINDEMO_EXPORT Q_DECL_EXPORT
+#else
+#  define PLUGINDEMO_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // PLUGINDEMO_GLOBAL_H
