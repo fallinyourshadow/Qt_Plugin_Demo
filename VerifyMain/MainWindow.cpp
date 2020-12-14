@@ -33,11 +33,11 @@ void MainWindow::loadPlugin(QString pluginPath)
         QObject *pluginInstance = loader.instance();
         if(pluginInstance)
         {
-            qDebug() << __FUNCDNAME__ << pluginInstance;
+            //qDebug() << __FUNCDNAME__ << pluginInstance;
             interface = qobject_cast<PluginInterface*>(pluginInstance);
         }
        // loader.dumpObjectInfo();
-        qDebug() << __FUNCDNAME__ << loader.unload();
+        //qDebug() << __FUNCDNAME__ << loader.unload();
         return;
     }
 }

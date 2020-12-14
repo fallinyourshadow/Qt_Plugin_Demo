@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     MainWindow w;
     PluginLoader l;
-    l.setProperty("path","C:/Users/Administrator/Desktop/PluginDemo/GenSignature/Mydll/GenSignature.dll");
+    l.setProperty("path","C:/Users/Administrator/Desktop/PluginDemo/Plugin/Mydll/Plugin.dll");
     //w.show();
     l.start();
    // w.show();

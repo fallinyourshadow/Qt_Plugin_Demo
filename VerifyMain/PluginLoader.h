@@ -43,7 +43,7 @@ public:
         QFile pluginFile(pluginPath);
         if(!pluginFile.exists())
         {
-            qDebug() << __FUNCDNAME__ << pluginPath;
+            //qDebug() << __FUNCDNAME__ << pluginPath;
             QMessageBox::warning(nullptr,QString::fromLocal8Bit( "warning"),QString::fromLocal8Bit("dll not fund"));
         }
         else
@@ -52,7 +52,7 @@ public:
             QObject *pluginInstance = loader.instance();
             if(pluginInstance)
             {
-                qDebug() << __FUNCDNAME__ << pluginInstance;
+                //qDebug() << __FUNCDNAME__ << pluginInstance;
                 interface = pluginInstance;
             }
             // loader.dumpObjectInfo();
